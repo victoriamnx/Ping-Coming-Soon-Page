@@ -11,7 +11,7 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Blue: hsl(223, 87%, 63%)
+- Blue hsl(223, 87%, 63%)
 
 ### Secondary
 
