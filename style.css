@@ -26,12 +26,6 @@ body {
   margin-top: 150px;
 }
 
-img {
-  width: 720px;
-  height: auto;
-  margin-top: 70px;
-}
-
 h1 {
   font-size: 50px;
   font-family: "Libre Franklin", sans-serif;
@@ -49,9 +43,9 @@ h1 {
 
 p {
   font-size: 20px;
-  font-family: "Libre Franklin", sans-serif;
   font-weight: 400;
   color: hsl(209, 33%, 12%);
+  font-family: "Libre Franklin", sans-serif;
 }
 
 #subscribe {
@@ -85,7 +79,7 @@ input {
   font-size: 16px;
   font-family: "Libre Franklin", sans-serif;
   font-style: italic;
-  font-weight: 300 ;
+  font-weight: 300;
   color: hsl(354, 100%, 66%);
   margin-left: 20px;
 }
@@ -125,6 +119,47 @@ button:hover {
     rgb(79, 125, 243, 0.25) 0 4px 8px, rgb(79, 125, 243, 0.25) 0 8px 16px,
     rgb(79, 125, 243, 0.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
+}
+
+.modal img {
+  width: 40px;
+  height: 40px;
+}
+
+.modal {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.modal-content {
+  width: 300px;
+  padding: 20px;
+  margin: 15% auto;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #fefefe;
+  border: none;
+}
+
+.modal-message {
+  color: hsl(209, 33%, 12%);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+#illustration {
+  width: 720px;
+  height: auto;
+  margin-top: 70px;
 }
 
 .attribution {
