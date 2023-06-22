@@ -213,3 +213,192 @@ a:hover {
   color: hsl(223, 87%, 63%);
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Libre Franklin", sans-serif;
+    background-image: url(components/images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center 70px;
+  }
+
+  #container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 110px;
+  }
+
+  h1 {
+    font-size: 26px;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 12px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    font-family: "Libre Franklin", sans-serif;
+    margin: 10px;
+  }
+
+  #container span {
+    font-size: 26px;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(209, 33%, 12%);
+    font-family: "Libre Franklin", sans-serif;
+    margin-bottom: 10px;
+  }
+
+  #subscribe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  input {
+    width: 320px;
+    padding: 20px;
+    border-radius: 500px;
+    outline: none;
+    margin: 5px;
+    background-color: #ffffff;
+    border: 1px solid hsl(223, 100%, 88%);
+  }
+
+  ::placeholder {
+    font-size: 14px;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+    color: hsl(223, 100%, 88%);
+  }
+
+  #subscribe span {
+    display: none;
+    font-size: 12px;
+    font-family: "Libre Franklin", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: hsl(354, 100%, 66%);
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .field {
+    border: 1px solid #ccc;
+    outline: none;
+  }
+
+  .field.--has-error {
+    border-color: #f00;
+  }
+
+  button {
+    display: inline-block;
+    padding: 20px 123px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Libre Franklin", sans-serif;
+    color: #ffffff;
+    background-color: hsl(223, 87%, 63%);
+    box-shadow: rgb(79, 125, 243) 0 10px 20px -10px;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 5px;
+  }
+
+  .modal img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .modal {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .modal-content {
+    width: 300px;
+    padding: 20px;
+    margin: 15% auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fefefe;
+    border: none;
+  }
+
+  .modal-message {
+    color: hsl(209, 33%, 12%);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Libre Franklin", sans-serif;
+  }
+
+  #illustration {
+    width: 350px;
+    height: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
+  .social-medias {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .social-media {
+    display: flex;
+    padding: 10px;
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 50%;
+    margin: 10px;
+  }
+
+  .social-media img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .attribution {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    font-family: "Libre Franklin", sans-serif;
+    margin-bottom: 10px;
+  }
+}
