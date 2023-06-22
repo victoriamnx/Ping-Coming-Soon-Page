@@ -25,15 +25,26 @@
             type="email"
             id="email-input"
             placeholder="Your email address..."
-            onblur="validateEmail()"
+            oninput="validateEmail()"
           />
-          <span id="email-error-message"
-            >Please, provide a valid email address</span
-          >
+
+          <span id="email-error-message" style="display: none">
+            Please, provide a valid email address.
+          </span>
         </form>
-        <button>Notify Me</button>
+        <button id="notify-button" onclick="exibirModal()" disabled>
+          Notify Me
+        </button>
+        <div class="modal" id="modal">
+          <div class="modal-content">
+            <img src="components/images/verificar.png" alt="" />
+            <h1 class="modal-message">
+              Success! You have been subscribed and will receive a notification.
+            </h1>
+          </div>
+        </div>
       </div>
-      <img src="components/images/illustration-dashboard.png" alt="" />
+      <img id="illustration" src="components/images/illustration-dashboard.png" alt="" />
       <div id="social-medias">
         <img src="" alt="" />
         <img src="" alt="" />
