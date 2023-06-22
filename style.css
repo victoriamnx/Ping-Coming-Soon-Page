@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;1,300;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Libre Franklin", sans-serif;
+  background-image: url(components/images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center 100px;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+img {
+  width: 720px;
+  height: auto;
+  margin-top: 70px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+  margin: 20px;
+}
+
+#container span {
+  font-size: 50px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+
+p {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 400;
+  color: hsl(209, 33%, 12%);
+}
+
+#subscribe {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+input {
+  width: 500px;
+  padding: 20px;
+  border-radius: 500px;
+  margin: 20px;
+  outline: none;
+  background-color: #ffffff;
+  border: 1px solid hsl(223, 100%, 88%);
+}
+
+::placeholder {
+  font-size: 14px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+  color: hsl(223, 100%, 88%);
+}
+
+#subscribe span {
+  display: none;
+  font-size: 16px;
+  font-family: "Libre Franklin", sans-serif;
+  font-style: italic;
+  font-weight: 300 ;
+  color: hsl(354, 100%, 66%);
+  margin-left: 20px;
+}
+
+.field {
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.field.--has-error {
+  border-color: #f00;
+}
+
+button {
+  display: inline-block;
+  padding: 20px 70px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Libre Franklin", sans-serif;
+  color: #ffffff;
+  background-color: hsl(223, 87%, 63%);
+  box-shadow: rgb(79, 125, 243) 0 10px 20px -10px;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: rgb(79, 125, 243, 0.35) 0 -25px 18px -14px inset,
+    rgb(79, 125, 243, 0.25) 0 1px 2px, rgb(79, 125, 243, 0.25) 0 2px 4px,
+    rgb(79, 125, 243, 0.25) 0 4px 8px, rgb(79, 125, 243, 0.25) 0 8px 16px,
+    rgb(79, 125, 243, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.attribution {
+  text-align: center;
+  font-size: 11px;
+  color: hsl(217, 12%, 63%);
+  font-family: "Libre Franklin", sans-serif;
+  margin-bottom: 10px;
+}
+
+.attribution a {
+  color: hsl(217, 12%, 63%);
+  text-decoration: none;
+}
+
+a:visited {
+  color: hsl(217, 12%, 63%);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(25, 97%, 53%);
+  text-decoration: underline;
+}
