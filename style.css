@@ -31,7 +31,7 @@ h1 {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 300;
   color: hsl(0, 0%, 59%);
-  margin: 20px;
+  margin: 20px 0px 10px 0px;
 }
 
 h2 {
@@ -69,8 +69,12 @@ input {
   width: 500px;
   padding: 20px;
   border-radius: 500px;
-  margin: 20px;
+  margin: 20px 20px 8px 0px;
   outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(209, 33%, 12%);
+  font-family: "Libre Franklin", sans-serif;
   background-color: #ffffff;
   border: 1px solid hsl(223, 100%, 88%);
 }
@@ -89,16 +93,7 @@ input {
   font-style: italic;
   font-weight: 300;
   color: hsl(354, 100%, 66%);
-  margin-left: 20px;
-}
-
-.field {
-  border: 1px solid #ccc;
-  outline: none;
-}
-
-.field.--has-error {
-  border-color: #f00;
+  margin-left: 40px;
 }
 
 button {
@@ -170,24 +165,50 @@ button:hover {
   margin-top: 70px;
 }
 
-.social-medias {
+.icon {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
-}
-
-.social-media {
-  display: flex;
-  padding: 10px;
-  border: 1px solid hsl(0, 0%, 59%);
   border-radius: 50%;
+  border: 1px solid hsla(0, 0%, 59%, 0.733);
   margin: 10px;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
 }
 
-.social-media img {
-  width: 25px;
-  height: 25px;
+.icon-facebook {
+  transition: transform 250ms;
+  background-image: url(components/images/icons/facebook.png);
+}
+
+.icon-facebook:hover,
+.icon-facebook:focus {
+  transform: translateY(-1px);
+  background-image: url(components/images/icons/facebook-app-symbol.png);
+}
+
+.icon-twitter {
+  transition: transform 250ms;
+  background-image: url(components/images/icons/twitternormal.png);
+}
+
+.icon-twitter:hover,
+.icon-twitter:focus {
+  transform: translateY(-1px);
+  background-image: url(components/images/icons/twitter.png);
+}
+
+.icon-insta {
+  transition: transform 250ms;
+  background-image: url(components/images/icons/instagramnormal.png);
+}
+
+.icon-insta:hover,
+.icon-insta:focus {
+  transform: translateY(-1px);
+  background-image: url(components/images/icons/instagram.png);
 }
 
 .attribution {
@@ -301,15 +322,6 @@ a:hover {
     margin-bottom: 10px;
   }
 
-  .field {
-    border: 1px solid #ccc;
-    outline: none;
-  }
-
-  .field.--has-error {
-    border-color: #f00;
-  }
-
   button {
     display: inline-block;
     padding: 20px 123px;
@@ -371,26 +383,6 @@ a:hover {
     height: auto;
     margin-top: 70px;
     margin-bottom: 50px;
-  }
-
-  .social-medias {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .social-media {
-    display: flex;
-    padding: 10px;
-    border: 1px solid hsl(0, 0%, 59%);
-    border-radius: 50%;
-    margin: 10px;
-  }
-
-  .social-media img {
-    width: 25px;
-    height: 25px;
   }
 
   .attribution {
