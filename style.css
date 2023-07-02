@@ -15,7 +15,7 @@ body {
   font-family: "Libre Franklin", sans-serif;
   background-image: url(components/images/logo.svg);
   background-repeat: no-repeat;
-  background-position: center 100px;
+  background-position: center 80px;
 }
 
 #container {
@@ -23,11 +23,11 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 160px;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 48px;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 300;
   color: hsl(0, 0%, 59%);
@@ -35,15 +35,16 @@ h1 {
 }
 
 h2 {
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 12px;
+  font-weight: lighter;
   color: hsl(0, 0%, 59%);
   font-family: "Libre Franklin", sans-serif;
-  margin: 10px;
+  margin-top: 25px;
+  margin-bottom: 49px;
 }
 
 #container span {
-  font-size: 50px;
+  font-size: 48px;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 700;
   color: hsl(209, 33%, 12%);
@@ -63,13 +64,15 @@ p {
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  margin-top: 40px;
 }
 
 input {
-  width: 500px;
+  width: 421px;
+  height: 56px;
   padding: 20px;
   border-radius: 500px;
-  margin: 20px 20px 8px 0px;
+  margin: 0px 20px 0px 0px;
   outline: none;
   font-size: 16px;
   font-weight: 400;
@@ -80,7 +83,7 @@ input {
 }
 
 ::placeholder {
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 300;
   color: hsl(223, 100%, 88%);
@@ -88,18 +91,20 @@ input {
 
 #subscribe span {
   display: none;
-  font-size: 16px;
+  font-size: 12px;
   font-family: "Libre Franklin", sans-serif;
   font-style: italic;
   font-weight: 300;
   color: hsl(354, 100%, 66%);
-  margin-left: 40px;
+  margin-top: 6px;
+  margin-left: 24px;
 }
 
 button {
-  display: inline-block;
-  padding: 20px 70px;
+  width: 200px;
+  height: 56px;
   border-radius: 999px;
+  display: inline-block;
   border: none;
   cursor: pointer;
   font-size: 16px;
@@ -160,9 +165,10 @@ button:hover {
 }
 
 #illustration {
-  width: 720px;
-  height: auto;
-  margin-top: 70px;
+  width: 640px;
+  height: 383px;
+  margin-top: 95px;
+  margin-bottom: 72px;
 }
 
 .icon {
@@ -171,10 +177,10 @@ button:hover {
   flex-direction: row;
   justify-content: center;
   border-radius: 50%;
-  border: 1px solid hsla(0, 0%, 59%, 0.733);
+  border: 1px solid hsla(0, 0%, 59%, 0.192);
   margin: 10px;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 31px;
   background-size: cover;
 }
 
@@ -220,21 +226,6 @@ button:hover {
   margin-bottom: 10px;
 }
 
-.attribution a {
-  color: hsl(0, 0%, 59%);
-  text-decoration: none;
-}
-
-a:visited {
-  color: hsl(0, 0%, 59%);
-  text-decoration: none;
-}
-
-a:hover {
-  color: hsl(223, 87%, 63%);
-  text-decoration: underline;
-}
-
 @media only screen and (max-width: 768px) {
   html,
   body {
@@ -245,7 +236,8 @@ a:hover {
     font-family: "Libre Franklin", sans-serif;
     background-image: url(components/images/logo.svg);
     background-repeat: no-repeat;
-    background-position: center 70px;
+    background-position: center 81px;
+    overflow: visible;
   }
 
   #container {
@@ -253,19 +245,19 @@ a:hover {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-top: 110px;
+    margin-top: 137px;
   }
 
   h1 {
-    font-size: 26px;
+    font-size: 22px;
     font-family: "Libre Franklin", sans-serif;
     font-weight: 300;
     color: hsl(0, 0%, 59%);
-    margin: 20px;
+    margin-bottom: 15px;
   }
 
   h2 {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 300;
     color: hsl(0, 0%, 59%);
     font-family: "Libre Franklin", sans-serif;
@@ -273,7 +265,7 @@ a:hover {
   }
 
   #container span {
-    font-size: 26px;
+    font-size: 22px;
     font-family: "Libre Franklin", sans-serif;
     font-weight: 700;
     color: hsl(209, 33%, 12%);
@@ -292,14 +284,19 @@ a:hover {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-top: 32px;
   }
 
   input {
-    width: 320px;
+    width: 282px;
+    height: 40px;
     padding: 20px;
     border-radius: 500px;
     outline: none;
-    margin: 5px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-size: 12px;
     background-color: #ffffff;
     border: 1px solid hsl(223, 100%, 88%);
   }
@@ -313,18 +310,20 @@ a:hover {
 
   #subscribe span {
     display: none;
-    font-size: 12px;
+    font-size: 10px;
     font-family: "Libre Franklin", sans-serif;
     font-style: italic;
     font-weight: 300;
     color: hsl(354, 100%, 66%);
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-bottom: 0px;
   }
 
   button {
     display: inline-block;
-    padding: 20px 123px;
+    width: 282px;
+    height: 40px;
     border-radius: 999px;
     border: none;
     cursor: pointer;
@@ -381,16 +380,7 @@ a:hover {
   #illustration {
     width: 350px;
     height: auto;
-    margin-top: 70px;
-    margin-bottom: 50px;
-  }
-
-  .attribution {
-    text-align: center;
-    font-size: 12px;
-    font-weight: 300;
-    color: hsl(0, 0%, 59%);
-    font-family: "Libre Franklin", sans-serif;
-    margin-bottom: 10px;
+    margin-top: 72px;
+    margin-bottom: 120px;
   }
 }
